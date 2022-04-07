@@ -36,5 +36,5 @@ for i in range(20):
     n = 5
     print(i)
     triangle(n)
-    time.sleep(10)
+    time.sleep(1000)
 
