@@ -1,6 +1,10 @@
 # Python 3.x code to demonstrate star pattern
 
 # Function to demonstrate printing pattern triangle
+from multiprocessing.connection import wait
+import time
+
+
 def triangle(n):
 	
 	# number of spaces
@@ -28,5 +32,9 @@ def triangle(n):
 		print("\r")
 
 # Driver Code
-n = 5
-triangle(n)
+for i in range(20):
+    n = 5
+    print(i)
+    triangle(n)
+    time.sleep(10)
+
